@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    /*========== Colors ==========*/
+    --white-color: #fff; 
+    --first-color: rgba(145, 129, 244, 1), rgba(80, 56, 237, 1);
+    --second-color: rgba(240, 237, 255, 0.8);
+    --black-color: rgba(28, 28, 28, 1);
+     /*========== Font and typography ==========*/
+     --body-font: 'Poppins', sans-serif; 
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.center_center{
+    justify-content: center;
+    align-items: center;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: inherit;
+    height: 100vh;
+    padding: 6rem;
+    background-color: #333;
+}
+.container{
+    background-color: var(--white-color);
+    width: 70%;
+    height: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+}
+ /*========== form_section ==========*/
+.form_section{
+    flex: 1;
+    font-family: var(--body-font);
+    color: var(--black-color);
+}
+form h4{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+form p{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+form div{
+    width: 100%;
+    height: 45px;
+    background-color: var(--second-color);
+    border-radius: 16px;
+    display: flex;
+    margin: 7px;
+    align-items: center;
+    padding: 15px;
+}
+
+form input{
+    flex: 2;
+    background-color: transparent;
+    margin-left: 10px;
+
+}
+form .submit{
+    width: 45%;
+    padding: 15px 20px;
+    border-radius: 16px;
+    margin: 10px;
+    background: linear-gradient(95deg, var(--first-color));
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 12px;
+
+}
+.break{
+    font-size: 12px;
+}
+.break::before,
+.break::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid var(--second-color);
+    margin: 0 10px;
+    width: 50px;
+}
+.break span{
+    font-weight: 600;
+}
+.social_media{
+    width: 60%
+}
+.social_media img{
+    width: 20px;
+    margin-right: 10px;
+}
+.social_media span{
+   font-weight: 600;
+}
+
+.social_media p{
+   font-size: 12px
+}
+.google,
+.facebook{
+    width: 100%;
+    height: 45px;
+    border: 1px solid var(--second-color);
+    border-radius: 16px;
+    display: flex;
+    margin: 7px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+ /*========== wellcome_section ==========*/
+.wellcome_section{
+    flex: 1;
+    height: 100%;
+    background: linear-gradient(195deg, var(--first-color));
+    position: relative;
+}
+.wellcome_section .background{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+}
+.wellcome_section .background img{
+    width: 280%;
+    opacity: 0.1;
+}
+.woman_card{
+    width: 55%;
+    height: 65%;
+    position: relative;
+    padding: 22px;
+    border-radius: 46px;
+    background-color: #ffffff30;
+}
+.woman_card .woman{
+    position: absolute;
+    bottom: 0px;
+    left: -140px;
+    width: 180%;
+    
+}
+.woman_card .flash{
+    position: absolute;
+    bottom: 50px;
+    left: -20px;
+    width: 55px;
+    background-color: var(--white-color);
+    border-radius: 100%;
+    padding: 10px;
+    
+}
+.woman_card h4{
+    width: 7rem;
+    color: var(--white-color);
+    font-size: 20px;
+    font-family: var(--body-font);
+    
+}
